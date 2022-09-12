@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+section
+{
+    min-height: 100vh;
+}
+#home
+{
+    background-image: url("../assets/images/mybanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* About section */
+#about
+{
+    /* background-color: #ea5; */
+}
+/*Button*/
+.button
+{
+    background-color: #FFA500;
+    padding: 0.5em 2em;
+    color: #fff;
+}
+a.button{
+    text-decoration: none;
+}
+a.button:hover
+{
+    color: #fee;
+}
+.person, .person_content
+{
+    min-height: 85vh;
+}
+
+.title
+{
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.title::after
+{
+    position: absolute;
+    content: '';
+    border: 5px solid #FFA500;
+    background-color: #FFA500;
+    width: 100px;
+    margin: 50px -150px auto;
+}
+
+.mycard
+{
+    background-color: #eee;
+    padding: 1.5em;
+}
+
+/* Spacers */
+.spacer
+{
+    padding: 0.2em;
+}
+
+.div-spacer
+{
+    padding: 1em;
+}
+/* End of about section */
+
+#about_2
+{
+    background-color: #eee;
+}
+.text-justify
+{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* List styling */
+.custom-list
+{
+    list-style: none;
+}
+.custom-list li::before
+{
+    content: '✓ ';
+    color: #FFA500;
+    font-weight: 700;
+}
+
+/* About 3 */
+#about_3
+{
+    background-color: #eee;
+}
+
+#about_3 .row
+{
+    /* min-height: 45vh; */
+    margin-bottom: 0.5rem;
+}
+.about_cards
+{
+    min-height: 45vh;
+    min-width: 45vh;
+    text-align: center;
+    margin: 0.5rem;
+    background-color: #FFA500;
+}
+.about_middle1
+{
+    background-image: url("../assets/images/manonladder.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about_middle2
+{
+    background-color: #fff;
+}
+
+.about_outter1
+{
+    background-image: url("../assets/images/manwithsaw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_outter2
+{
+    background-image: url("../assets/images/manin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vertical-align-middle
+{
+    margin-top: calc(100% - 200px);
+}
+#counter_description
+{
+
+}
+.header-text
+{
+    font-size: 4em;
+    color: #FFA500;
+}
+
+.fa-3x{
+    color: #FFA500;
+}
+
+button.border-warn
+{
+    border: 1px solid #FFA500;
+}
+
+div.button.border-warn:hover
+{
+    background-color: #FFA500;
+    color: #fff;
+}
+
+.stuffs
+{
+    background-image: url("https://img.freepik.com/free-photo/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus_1418-704.jpg?w=996&t=st=1662985875~exp=1662986475~hmac=cf5a2b83e6506429a511beedb5ec58352c05d90ac819c9ede86de851249a3632");
+    background-size: cover;
+    background-position: center;
+}
+
+.font-weight-bold
+{
+    font-weight: 700;
+}
+
+.mynav
+{
+    list-style: none;
+}
+
+.mynav li
+{
+    display: inline-block;
+    width: 33%
+}
+.mynav li a
+{
+    text-decoration: none;
+    padding: 3% 37%;
+    color: #222;
+    font-weight: 700;
+}
+.myactive
+{
+    background-color: #FFA500;
+}
+
+ /*Search input*/
+
+ .search{
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1); 
+    }
+
+    .search .fa-search{
+     position: absolute;
+     top: 7px;
+     left: 150px;
+     color: #fff;
+    }
+
+    .search button{
+     position: absolute;
+     /* top: 5px;
+     right: 5px; */
+     /* height: 50px; */
+     background: none;
+     border: none;
+    }
+
+       .search input{
+
+        height: 30px;
+        width:auto;
+        text-indent: 25px;
+        background-color:rgba(0,0,0,0) !important;
+        border:1px solid #eee !important;
+    }
+
+    .search input:focus{
+        box-shadow: none;
+        border: 2px solid blue;
+        background-color: rgba(0,0,0,0);
+       }
+
+.bg-opacity-0
+{
+        margin-right: auto;
+        margin-left: auto;
+        width: 25%;
+        /* box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); */
+        height: auto;
+        /* border-radius: 5px; */
+        /* backdrop-filter: blur(14px); */
+        /* background-color: rgba(255, 255, 255, 0.2); */
+        padding: 10px;
+        text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    #about_3 .row
+    {
+        width: auto;
+        margin: 0px;
+    }
+
+    .about_cards
+    {
+        min-height: 55vh;
+        text-align: center;
+    }
+    .vertical-align-middle
+    {
+        margin-top: calc(100% - 400px);
+    }
+}
+/* @media only screen and (max-width: 768px) {
+
+    .vertical-align-middle
+    {
+        margin-top: calc(100% - 400px);
+    }
+} */
+@media only screen and (max-width: 990px) {
+    
+    .vertical-align-middle
+    {
+        margin-top: calc(100% - 260px);
+    }
+}
+
+@media only screen and(max-width: 1400px) {
+    .vertical-align-middle
+    {
+        margin-top: calc(100% - 100px);
+    }
+}
