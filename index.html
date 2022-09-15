@@ -9,40 +9,54 @@
       <link rel="stylesheet" href="">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+      <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"> -->
+      <style>
+         body
+         {
+         font-family: sans-serif;
+         }
+      </style>
    </head>
    <body>
+      <div class="push-up bg-dark bg-opacity-75" id="scrollBtn">
+         <a href="#"><i class="fa fa-arrow-up"></i></a>
+      </div>
       <section id="home">
          <div class="container">
-            <nav class="navbar navbar-expand-lg p-3">
+            <nav class="navbar navbar-expand-lg">
                <div class="container-fluid">
-                  <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon text-light"></span>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fa fa-bars"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <div class="col-md-12 div-spacer pt-5 d-inline d-lg-none"></div>
+                  <div class="collapse navbar-collapse pt-3 navbar-toggle" id="navbarTogglerDemo01">
                      <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
                      <!-- <form class="d-flex" role="search">
                         <input class="form-control me-2 transparent-input" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                         </form> -->
-                     <div class="row">
-                        <div class="col-md-4">
-                           <div class="search">
-                              <i class="fa fa-search"></i>
-                              <input type="text" class="form-control" placeholder="Search">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <div class="search">
+                                 <i class="fa fa-search"></i>
+                                 <input type="text" class="form-control" placeholder="Search">
+                              </div>
                            </div>
                         </div>
-                     </div>
-                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 offset-lg-7 text-uppercase">
-                        <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#">Contact</a>
-                        </li>
-                     </ul>
+                        <ul class="navbar-nav mb-2 offset-lg-8 text-uppercase">
+                           <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">Contact</a>
+                           </li>
+                        </ul>
                   </div>
                </div>
             </nav>
@@ -57,17 +71,17 @@
                      <div class="card bg-dark bg-opacity-75 text-white">
                         <div class="card-body">
                            <div class="row">
-                              <div class="col-10 p-2 text-uppercase">
+                              <div class="col-9 p-2 text-uppercase">
                                  Building
                               </div>
                               <div class="col-2 p-2">
-                                 <i class="fa fa-building fa-3x"></i>
+                                 <i class="fa fa-building fa-4x"></i>
                               </div>
                               <div class="col-md-12 p-2">
                                  Exkoirj efihrguh
                               </div>
                               <div class="col-md-12 p-2 text-uppercase">
-                                 <button class="btn text-white border-warn">More</button>
+                                 <button class="btn border-warn" id="myborder">More</button>
                               </div>
                            </div>
                         </div>
@@ -77,17 +91,17 @@
                      <div class="card bg-dark bg-opacity-75 text-white">
                         <div class="card-body">
                            <div class="row">
-                              <div class="col-10 p-2 text-uppercase">
+                              <div class="col-9 p-2 text-uppercase">
                                  Industrial
                               </div>
                               <div class="col-2 p-2">
-                                 <i class="fa fa-industry fa-3x"></i>
+                                 <i class="fa fa-industry fa-4x"></i>
                               </div>
                               <div class="col-md-12 p-2">
                                  Exkoirj efihrguh
                               </div>
                               <div class="col-md-12 p-2 text-uppercase">
-                                 <button class="btn text-white border-warn">More</button>
+                                 <button class="btn border-warn" id="myborder">More</button>
                               </div>
                            </div>
                         </div>
@@ -97,17 +111,17 @@
                      <div class="card bg-dark bg-opacity-75 text-white">
                         <div class="card-body">
                            <div class="row">
-                              <div class="col-10 p-2 text-uppercase">
+                              <div class="col-9 p-2 text-uppercase">
                                  Future
                               </div>
                               <div class="col-2 p-2">
-                                 <i class="fa-solid fa-house-chimney-crack fa-3x"></i>
+                                 <i class="fa-solid fa-house-chimney-crack fa-4x"></i>
                               </div>
                               <div class="col-md-12 p-2">
                                  Exkoirj efihrguh
                               </div>
                               <div class="col-md-12 p-2 text-uppercase">
-                                 <button class="btn text-white border-warn">More</button>
+                                 <button class="btn border-warn" id="myborder">More</button>
                               </div>
                            </div>
                         </div>
@@ -121,13 +135,30 @@
          <div class="container mb-4">
             <div class="row pt-5">
                <div class="col-md-4">
-                  <div class="person pb-2">
-                     <img src="assets/images/builder.jpg" class="img-fluid">
+                  <div class="person">
+                     <!-- <img src="assets/images/builder.jpg" class="img-fluid"> -->
+                     <div class="card bg-opacity-50">
+                        <div class="card-body">
+                           <div class="text-center content">
+                              <h5 class="font-weight-bold p-3">JAMES MADISON</h5>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia alias mollitia veritatis nisi sapiente cumque cum totam ipsam impedit atque!</p>
+                                 </div>
+                                 <div class="col-md-12">
+                                    <img src="assets/images/sign.png" width="100%">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
-               <div class="col-md-8 pt-2">
+               <div class="col-md-8">
                   <div class="row text-center person_content">
-                     <div class="col-md-12 pt-5">
+                     <div class="col-md-12 div-spacer pt-5 d-none d-lg-inline"></div>
+                     <div class="col-md-12 d-inline d-lg-none div-spacer"></div>
+                     <div class="col-md-12">
                         <h1 class="title">Creates Unique Design and Construction According to Client's Needs</h1>
                         <p class="pt-5 container">
                            We are a diversified construction company made up of people who are proven in their industries. All working to Design
@@ -135,11 +166,11 @@
                            and steel. We value our clients and their opinions and try to meet expectations
                         </p>
                      </div>
-                     <div class="col-md-12 div-spacer pt-5 m-4 d-none d-lg-inline"></div>
+                     <div class="col-md-12 div-spacer pt-4 m-4 d-none d-lg-inline"></div>
                      <div class="col-md-12 mt-5">
                         <div class="mycard">
                            <div class="mycard-body">
-                              <p class="container">
+                              <p class="container-fluid">
                                  As a leader in the design and construction of advanced technology facilities, our architectural solutions
                                  are a result of a collaborative process that empowers our multidisciplinary teams to share knowledge, leverage new technology
                                  and create innovative design solutions.
@@ -155,7 +186,7 @@
          </div>
       </section>
       <section id="about_2">
-         <div class="container p-5">
+         <div class="container">
             <div class="row pb-4">
                <div class="col-md-5">
                   <h3 class="heading font-weight-500 text-uppercase">
@@ -167,13 +198,13 @@
                </div>
                <div class="col-md-7 text-center">
                   <!-- <img src="assets/images/build.jpg" class="img img-sm img-responsive"> -->
-                  <img src="assets/images/build.jpg" class="mx-auto d-block" alt="image" width="350px">
+                  <img src="assets/images/build.jpg" class="mx-auto d-block img-fluid" alt="image" width="350px">
                </div>
             </div>
             <div class="row pb-4">
                <div class="col-md-5">
                   <!-- <img src="assets/images/build.jpg" class="img img-sm img-responsive"> -->
-                  <img src="assets/images/pointing-sketch.jpg"  alt="image" width="250px">
+                  <img src="assets/images/pointing-sketch.jpg" class="mx-auto d-block d-lg-inline img-fluid pb-3" alt="image" width="250px">
                </div>
                <div class="col-md-6 offset-lg-1">
                   <h3 class="heading font-weight-500 text-uppercase">
@@ -197,112 +228,95 @@
          </div>
       </section>
       <section id="about_3">
-         <div class="container pt-5 pb-5">
+         <div class="container-fluid pt-3 pb-5">
             <div class="row">
                <div class="col-md-12">
-                  <div class="container-fluid p-2 px-4 text-wrap">
-                     <p class="text-center">
-                        As a leader in the design and construction of advanced technology facilities, our architectural solutions are a result of a collaborative process that empowers our multidisciplinary teams to share knowledge, leverage new technology and create innovative design solutions.
-                     </p>
-                  </div>
-               </div>
-            </div>
-            <!-- <div class="row">
-               <div class="col-md-4">
-                   <div class="about_cards text-white">
-                       <div class="d-flex flex-column align-items-center justify-content-center text-centers p-3">
-                           <div class="vertical-align-middle">
-                               <h3 class="text-uppercase">About us</h3>
-                               <p>
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis magnam voluptate fugit dolor laboriosam commodi? Nemo sapiente eos animi quam soluta accusantium autem alias.
-                               </p>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4">
-                   <div class="about_cards about_middle1 text-white">
-                       <div class="d-flex flex-column align-items-center justify-content-center text-centers p-3">
-                           <div class="vertical-align-middle">
-                               
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4">
-                   <div class="about_cards text-white">
-                       <div class="d-flex flex-column align-items-center justify-content-center text-centers p-3">
-                           <div class="vertical-align-middle">
-                               <h3 class="text-uppercase">Our Strategy</h3>
-                               <p>
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis magnam voluptate fugit dolor laboriosam commodi? Nemo sapiente eos animi quam soluta accusantium autem alias.
-                               </p>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               </div> -->
-            <div class="row container-fluid">
-               <div class="col-1"></div>
-               <div class="col-md-3 about_cards">
-                  <div class=" text-white">
-                     <div class="d-flex flex-column align-items-center justify-content-center text-centers p-3">
-                        <div class="vertical-align-middle">
-                           <h3 class="text-uppercase">About Us</h3>
-                           <p>
-                              Provident, asperiores! Esse, quaerat harum, aliquam adipisci nesciunt ab maxime vel fuga aperiam velit veritatis corrupti impedit similique nulla inventore iste. Et.
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-3 about_cards about_middle1">
-                  <div class=" text-dark">
-                     <div class="d-flex flex-column align-items-center justify-content-center text-centers p-3">
-                        <div class="vertical-align-middle">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-3 about_cards">
-                  <div class=" text-white">
-                     <div class="d-flex flex-column align-items-center justify-content-center text-centers p-3">
-                        <div class="vertical-align-middle">
-                           <h3 class="text-uppercase">Our Strategy</h3>
-                           <p>
-                              Dolores repudiandae placeat excepturi commodi? Porro, animi blanditiis? Numquam harum nisi dolor, autem, error porro officiis aut animi iure, quis labore atque?
+                  <div class="container-fluid mycont px-4 text-wrap">
+                     <div class="row text-center">
+                        <div class="col-md-12">
+                           <p class="top_p">
+                              As a leader in the design and construction of advanced technology facilities, our architectural solutions are a result of a collaborative process that empowers our multidisciplinary teams to share knowledge, leverage new technology and create innovative design solutions.
                            </p>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="row container-fluid">
-               <div class="col-1"></div>
-               <div class="col-md-3 about_cards about_outter1">
-                  <div class=" text-white">
-                     <div class="d-flex flex-column align-items-center justify-content-center text-centers p-3">
-                        <div class="vertical-align-middle">
+            <div class="container-fluid text-center">
+               <div class="container-fluid abt">
+                  <div class="row text-center">
+                     <div class="col-md-4">
+                        <div class="about_cards">
+                           <div class=" text-white">
+                              <div class="d-flex flex-column container align-items-center justify-content-center text-centers p-3">
+                                 <div class="vertical-align-middle">
+                                    <h3 class="text-uppercase">About Us</h3>
+                                    <p>
+                                       Provident, asperiores! Esse, quaerat harum, aliquam adipisci nesciunt ab maxime vel fuga aperiam velit veritatis corrupti impedit similique nulla inventore iste. Et.
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="about_cards about_middle1">
+                           <div class=" text-dark">
+                              <div class="d-flex flex-column container align-items-center justify-content-center text-centers p-3">
+                                 <div class="vertical-align-middle">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="about_cards">
+                           <div class=" text-white">
+                              <div class="d-flex flex-column container align-items-center justify-content-center text-centers p-3">
+                                 <div class="vertical-align-middle">
+                                    <h3 class="text-uppercase">Our Strategy</h3>
+                                    <p>
+                                       Dolores repudiandae placeat excepturi commodi? Porro, animi blanditiis? Numquam harum nisi dolor, autem, error porro officiis aut animi iure, quis labore atque?
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
-               </div>
-               <div class="col-md-3 about_cards about_middle2">
-                  <div class=" text-dark">
-                     <div class="d-flex flex-column align-items-center justify-content-center text-centers p-3">
-                        <div class="vertical-align-middle">
-                           <h3 class="text-uppercase">Our Mission</h3>
-                           <p>
-                              A, inventore ex. Ea maxime culpa dolorum distinctio vero iste, dolores officiis iure sit molestiae modi amet quia aperiam atque id vitae. Dolor sit amet consectetur adipisicing elit. Blanditiis, ab!
-                           </p>
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="about_cards about_outter1">
+                           <div class="text-white">
+                              <div class="d-flex flex-column container align-items-center justify-content-center text-centers p-3">
+                                 <div class="vertical-align-middle">
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
-                  </div>
-               </div>
-               <div class="col-md-3 about_cards about_outter2">
-                  <div class=" text-white">
-                     <div class="d-flex flex-column align-items-center justify-content-center text-centers p-3">
-                        <div class="vertical-align-middle">
+                     <div class="col-md-4">
+                        <div class="about_cards about_middle2">
+                           <div class=" text-dark">
+                              <div class="d-flex flex-column container align-items-center justify-content-center text-centers p-3">
+                                 <div class="vertical-align-middle">
+                                    <h3 class="text-uppercase">Our Mission</h3>
+                                    <p>
+                                       A, inventore ex. Ea maxime culpa dolorum distinctio vero iste, dolores officiis iure sit molestiae modi amet quia aperiam atque id vitae. Dolor sit amet consectetur adipisicing elit. Blanditiis, ab!
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="about_cards about_outter2">
+                           <div class="text-white">
+                              <div class="d-flex flex-column container align-items-center justify-content-center text-centers p-3">
+                                 <div class="vertical-align-middle">
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -313,8 +327,8 @@
       <section id="counter_description">
          <div class="container-fluid">
             <div class="row stuffs">
-               <div class="col-md-12  bg-dark bg-opacity-50 text-warning">
-                  <div class="d-flex flex-row justify-content-between align-items-center p-5">
+               <div class="col-md-12 bg-dark bg-opacity-50 text-warning">
+                  <div class="container d-flex flex-row justify-content-between align-items-center p-3">
                      <div class="row">
                         <div class="bg-opacity-0 col-md-3 p-5">
                            <div class="row">
@@ -322,7 +336,7 @@
                                  <i class="fa fa-user h1"></i>
                               </div>
                               <div class="col-md-12 p-2">
-                                 <div class="display-3 text-white font-weight-bold">6</div>
+                                 <div class="display-3 text-white font-weight-bold count" data-target="60">0</div>
                               </div>
                               <div class="col-md-12 p-2">
                                  <h5 class="text text-uppercase">Specialists</h5>
@@ -335,7 +349,7 @@
                                  <i class="fa fa-users h1"></i>
                               </div>
                               <div class="col-md-12 p-2">
-                                 <div class="display-3 text-white font-weight-bold">16</div>
+                                 <div class="display-3 text-white font-weight-bold count" data-target="1600">0</div>
                               </div>
                               <div class="col-md-12 p-2">
                                  <h5 class="text text-uppercase">Happy Clients</h5>
@@ -348,7 +362,7 @@
                                  <i class="fa fa-briefcase h1"></i>
                               </div>
                               <div class="col-md-12 p-2">
-                                 <div class="display-3 text-white font-weight-bold">19</div>
+                                 <div class="display-3 text-white font-weight-bold count" data-target="380">0</div>
                               </div>
                               <div class="col-md-12 p-2">
                                  <h5 class="text text-uppercase">Successful Cases</h5>
@@ -361,7 +375,7 @@
                                  <i class="fa fa-trophy h1"></i>
                               </div>
                               <div class="col-md-12 p-2">
-                                 <div class="display-3 text-white font-weight-bold">8</div>
+                                 <div class="display-3 text-white font-weight-bold count" data-target="80">0</div>
                               </div>
                               <div class="col-md-12 p-2">
                                  <h5 class="text text-uppercase">Awards</h5>
@@ -373,43 +387,331 @@
                </div>
             </div>
             <div class="container p-5">
-               <div class="row mb-4 text-center text-uppercase font-weight-bold">
-                  <div class="col-md-4 myactive text-white p-2">Description</div>
-                  <div class="col-md-4 p-2">Specifications</div>
-                  <div class="col-md-4 p-2">Reviews</div>
+               <div class="row nav mb-4 text-center text-uppercase font-weight-bold">
+                  <div class="col-md-4 nav-item text-white" role="presentation">
+                    <button class="nav-link id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                  </div>
+                  <div class="col-md-4 nav-item" role="presentation">
+                    <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab" aria-controls="specifications" aria-selected="false">Specifications</button>
+                  </div>
+                  <div class="col-md-4 nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews</button>
+                  </div>
                </div>
-               <div class="row">
-                  <div class="col-md-4">
+
+               <div class="row flex-column-reverse flex-md-row">
+                  <div class="col-md-4 pb-4">
                      <img src="assets/images/image-scaled.jpg" class="img-fluid">
                   </div>
-                  <div class="col-md-8">
-                    <h5 class="text-uppercase">Description</h5>
-                    <p class="text-">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis molestias amet maiores voluptate illum culpa dignissimos distinctio corrupti nesciunt, reiciendis reprehenderit molestiae nobis expedita ipsum, consectetur consequatur voluptatem natus, exercitationem doloremque. Perspiciatis sunt eius facere, aspernatur aut tempore eligendi omnis quam eaque necessitatibus, iure reiciendis neque eveniet, nulla adipisci!</p>
-                    <p>
+                  <div class="col-md-8 tab-content" id="myTabContent">
+                     <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="description-tab" id="description">
+                        <h5 class="text-uppercase">Description</h5>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis molestias amet maiores voluptate illum culpa dignissimos distinctio corrupti nesciunt, reiciendis reprehenderit molestiae nobis expedita ipsum, consectetur consequatur voluptatem natus, exercitationem doloremque. Perspiciatis sunt eius facere, aspernatur aut tempore eligendi omnis quam eaque necessitatibus, iure reiciendis neque eveniet, nulla adipisci!</p>
+                        <p>
                         <ul>
-                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, placeat.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, provident quod.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum!</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                           <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, placeat.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab.</li>
+                           <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, provident quod.</li>
+                           <li>Lorem ipsum dolor sit amet.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum!</li>
+                           <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
                         </ul>
-                    </p>
-                 </div>
+                        </p>
+                     </div>
+                     <div  class="tab-pane fade" role="tabpanel" aria-labelledby="specifications-tab" id="specifications">
+                        <h5 class="text-uppercase">Specifications</h5>
+                        <p class="text-secondary">Ipsa quos beatae nihil laborum itaque animi tempora, dolores suscipit dicta nulla neque pariatur repellat sit odio sequi omnis sed nemo voluptate.</p>
+                        <p>
+                        <ul>
+                           <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, placeat.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab.</li>
+                           <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, provident quod.</li>
+                           <li>Lorem ipsum dolor sit amet.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum!</li>
+                           <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        </ul>
+                        </p>
+                     </div>
+                     <div  class="tab-pane fade" role="tabpanel" aria-labelledby="reviews-tab" id="reviews">
+                        <h5 class="text-uppercase">Reviews</h5>
+                        <p class="text-secondary"> Recusandae perspiciatis molestias amet maiores voluptate illum culpa dignissimos distinctio corrupti nesciunt, reiciendis reprehenderit molestiae nobis expedita ipsum, consectetur consequatur voluptatem natus, exercitationem doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, itaque libero amet ratione autem corrupti quia neque voluptas repellat illum!</p>
+                        <p>
+                        <ul>
+                           <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, placeat.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab.</li>
+                           <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, provident quod.</li>
+                           <li>Lorem ipsum dolor sit amet.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum!</li>
+                           <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                           <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        </ul>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+          <script>
+              const counters = document.querySelectorAll(".count");
+        const speed = 20;
+        
+        counters.forEach((counter) => {
+          const updateCount = () => {
+            const target = parseInt(+counter.getAttribute("data-target"));
+            const count = parseInt(+counter.innerText);
+            const increment = Math.trunc(target / speed);
+            console.log(increment);
+        
+            if (count < target) {
+              counter.innerText = count + increment;
+              setTimeout(updateCount, 100);
+            } else {
+              count.innerText = target;
+            }
+          };
+          updateCount();
+        });
+
+        // Get the button
+         let mybutton = document.getElementById("scrollBtn");
+
+         // When the user scrolls down 30px from the top of the document, show the button
+         window.onscroll = function() {scrollFunction()};
+
+         function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 30) {
+            mybutton.style.display = "block";
+         } else {
+            mybutton.style.display = "none";
+         }
+         }
+        
+          </script>
+      </section>
+      <section id="pricing" class="text-center">
+         <div class="container">
+            <h1 class="display-1 font-weight-900">Responsive Pricing Table</h1>
+            <p class="text-center" style="width: 50%;margin:auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque numquam soluta, doloribus magnam aliquam animi minima eius commodi recusandae ut unde, sint impedit exercitationem eum earum molestiae consequatur amet?</p>
+            <div class="container pb-4">
+               <div class="row pt-5 pb-2">
+                  <div class="col-md-4">
+                     <div class="panel1">
+                        <div class="panel-header1 text-center text-uppercase">
+                           <h2>Basic</h2>
+                           <h3>$30</h3>
+                        </div>
+                        <div class="panel-body">
+                           <div class="div-spacer"></div>
+                           <ul>
+                              <li>
+                                 <p>1 full user</p>
+                              </li>
+                              <li>
+                                 <p>1000 email previews</p>
+                              </li>
+                              <li>
+                                 <p>5 Contacts per client</p>
+                              </li>
+                              <li>
+                                 <p>5 coffee cups</p>
+                              </li>
+                              <li><button>BUY NOW</button></li>
+                           </ul>
+                           <div class="div-spacer"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="panel2">
+                        <div class="panel-header text-center text-uppercase">
+                           <h2>Standard</h2>
+                           <h3>$60</h3>
+                        </div>
+                        <div class="panel-body">
+                           <div class="div-spacer"></div>
+                           <ul>
+                              <li>
+                                 <p>10 full user</p>
+                              </li>
+                              <li>
+                                 <p>2000 email previews</p>
+                              </li>
+                              <li>
+                                 <p>10 Contacts per client</p>
+                              </li>
+                              <li>
+                                 <p>10 coffee cups</p>
+                              </li>
+                              <li><button>BUY NOW</button></li>
+                           </ul>
+                           <div class="div-spacer"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="panel3"></div>
+                  </div>
                </div>
             </div>
          </div>
       </section>
-      <section id="pricing">
-      </section>
       <section id="building_company">
+         <div class="divwithbg bg-dark bg-opacity-50">
+            <div class="container pt-5 text-center">
+               <h1 class="display-1 font-weight-900 text-white">Building Company</h1>
+               <p class="text-white" style="width: 50%;margin:auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est odio quia officia!</p>
+               <div class="container">
+                  <div class="row p-4">
+                     <div class="col-md-3">
+                        <div class="card card1">
+                           <div class="card-body">
+                              <div class="image p-4">
+                                 <img src="assets/images/manin.jpg" width="100%">
+                              </div>
+                              <h4 class="p-3">DESIGN-BUILD</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="card card1">
+                           <div class="card-body">
+                              <div class="image p-4">
+                                 <img src="assets/images/manonladder.jpg" width="100%">
+                              </div>
+                              <h4 class="p-3">REMODELLING</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="card card1">
+                           <div class="card-body">
+                              <div class="image p-4">
+                                 <img src="assets/images/manwithsaw.jpg" width="100%">
+                              </div>
+                              <h4 class="p-3">CITY SPACES</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="card card1">
+                           <div class="card-body">
+                              <div class="image p-4">
+                                 <img src="assets/images/mancut.jpg" width="100%">
+                              </div>
+                              <h4 class="p-3">CIVIL ENGINEERS</h4>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row p-5">
+                     <div class="col-md-12 text-center">
+                        <button class="viewButton">View More</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </section>
       <section id="team">
+         <div class="container">
+            <div class="row testpadding">
+               <div class="col-md-6 pt-2">
+                  <div class="cardholder">
+                     <div class="card">
+                        <div class="card-body">
+                           <div class="card-padding">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit est ut aut quidem delectus quasi nostrum perspiciatis obcaecati. Sit illo nobis voluptas impedit eos voluptates quos facere laboriosam sequi tenetur.</p>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <img src="assets/images/user2.jpg" style="border-radius: 50%" width="100%">
+                                 </div>
+                                 <div class="col-md-9 pt-2">
+                                   <h5 class="text-uppercase font-weight-bold name">Celia Almeda</h5>
+                                   <h6 class="name_title">CEO, Company</h6>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 pt-2">
+                  <div class="cardholder">
+                     <div class="card">
+                        <div class="card-body">
+                           <div class="card-padding">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit est ut aut quidem delectus quasi nostrum perspiciatis obcaecati. Sit illo nobis voluptas impedit eos voluptates quos facere laboriosam sequi tenetur.</p>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <img src="assets/images/user1.jpg" style="border-radius: 50%" width="100%">
+                                 </div>
+                                 <div class="col-md-9 pt-2">
+                                    <h5 class="text-uppercase font-weight-bold name">Frank Kinney</h5>
+                                   <h6 class="name_title">Financial Director</h6>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 text-center pt-5">
+                  <button>VIEW MORE</button>
+               </div>
+            </div>
+         </div>
       </section>
       <footer>
+         <div class="bg-dark bg-opacity-50">
+            <div class="mycont2 testpadding text-center">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="card card1">
+                        <div class="card-body text-center p-5">
+                           <div class="d-flex flex-column align-items-center justify-content-center">
+                              <i class="fa fa-map-marker fa-3x"></i>
+                              <h4 class="font-weight-bold">ADDRESS</h4>
+                              <p>27 13 Lowe Haven</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="card card1 card-phone">
+                        <div class="card-body text-center p-5">
+                           <div class="d-flex flex-column align-items-center justify-content-center">
+                              <i class="fa fa-mobile fa-3x"></i>
+                              <h4 class="font-weight-bold">PHONE</h4>
+                              <p>+111 343 43 43</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="card card1">
+                        <div class="card-body text-center p-5">
+                           <div class="d-flex flex-column align-items-center justify-content-center">
+                              <i class="fa fa-file-text fa-3x"></i>
+                              <h4 class="font-weight-bold">EMAIL</h4>
+                              <p>business@info.com</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
    </body>
 </html>
